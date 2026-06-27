@@ -1,0 +1,85 @@
+Trailtitan Public License (TTL) v1.0
+
+Copyright (c) 2026 T. Jermain. All rights reserved.
+
+---
+
+1. DEFINITIONS
+
+"Software" means the source code, binaries, documentation, and associated files covered by this license.
+
+"Personal Use" means use by a natural person for non-commercial, private purposes, including personal projects, education, and research, where no revenue or commercial benefit is derived.
+
+"Commercial Use" means any use of the Software, in whole or in part, in a product or service that is sold, licensed, subscribed to, or otherwise generates revenue or commercial advantage.
+
+"Licensor" means T. Jermain.
+
+"You" means the individual or legal entity exercising rights under this license.
+
+---
+
+2. PERSONAL USE GRANT
+
+Subject to the terms of this license, the Licensor grants You a worldwide, royalty-free, non-exclusive, non-sublicensable license to:
+
+- Use the Software for Personal Use purposes;
+- Modify the Software for Personal Use purposes;
+- Distribute unmodified copies of the Software for Personal Use purposes, provided this license is included in full.
+
+---
+
+3. COMMERCIAL USE GRANT
+
+Subject to the terms of this license, the Licensor grants You a worldwide, royalty-free, non-exclusive, non-sublicensable license to use the Software, in unmodified form, as part of a commercial product or service, provided that all of the following conditions are met:
+
+(a) Attribution. Any product, service, interface, or documentation in which the Software is used must display, in a clearly visible location, the following notice:
+
+    "Built on [Software Name], open-source software by T. Jermain, licensed under the Trailtitan Public License."
+
+accompanied by the official logo or mark designated by T. Jermain for the relevant Software, as specified in the repository or project documentation. The mark must not be altered, obscured, or scaled below a legible size.
+
+(b) No Modification. You may not modify, adapt, translate, or create derivative works of the Software for any Commercial Use purpose. The Software must be used as-is.
+
+(c) No Sublicensing. You may not sublicense the Software or grant third parties rights beyond those provided under this license.
+
+---
+
+4. RESTRICTIONS
+
+The following are expressly prohibited:
+
+- Modifying the Software for any Commercial Use purpose;
+- Removing, obscuring, or altering any copyright notices, license text, or attribution requirements;
+- Using the Licensor's name or any associated marks to endorse or promote products derived from the Software, beyond what is required under Section 3(a), without prior written permission.
+
+---
+
+5. REDISTRIBUTION
+
+You may redistribute unmodified copies of the Software provided that:
+
+- This license is included in full with any distribution;
+- You do not represent the Software as your own original work;
+- Any modifications made under the Personal Use grant are clearly marked as modifications and are not redistributed under a different license.
+
+---
+
+6. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THE LICENSOR SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF THE SOFTWARE.
+
+---
+
+7. TERMINATION
+
+This license terminates automatically if You fail to comply with any of its terms. Upon termination, You must cease all use and distribution of the Software. Sections 4, 6, and 8 survive termination.
+
+---
+
+8. GOVERNING LAW
+
+This license shall be governed by and construed in accordance with the laws of England and Wales, without regard to conflict of law principles.
+
+---
+
+Trailtitan Public License v1.0 -- issued 2026
