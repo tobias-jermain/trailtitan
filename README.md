@@ -1,6 +1,6 @@
 <h3 align="center">
   <a name="readme-top"></a>
-  <img src="public/logoColour.png" height="80" alt="Trailtitan" />
+  <img src="public/logoColour.png" height="65" alt="Trailtitan" />
 </h3>
 
 <p align="center">
