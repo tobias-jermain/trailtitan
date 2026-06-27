@@ -1,6 +1,6 @@
 <h3 align="center">
   <a name="readme-top"></a>
-  <img src="public/logoColour.png" height="70" alt="Trail Finder" />
+  <img src="public/logoColour.png" height="80" alt="Trailtitan" />
 </h3>
 
 <p align="center">
@@ -8,15 +8,14 @@
 </p>
 
 <div align="center">
-  <a href="https://github.com/yourusername/trail-finder/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/yourusername/trail-finder" alt="License" />
+  <a href="https://github.com/tobias-jermain/trailtitan/releases">
+    <img src="https://img.shields.io/github/v/release/tobias-jermain/trailtitan" alt="Latest Release" />
   </a>
-  <a href="https://github.com/yourusername/trail-finder/releases">
-    <img src="https://img.shields.io/github/v/release/yourusername/trail-finder" alt="Latest Release" />
+  <a href="https://github.com/tobias-jermain/trailtitan/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/tobias-jermain/trailtitan.svg" alt="Contributors" />
   </a>
-  <a href="https://github.com/yourusername/trail-finder/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/yourusername/trail-finder.svg" alt="Contributors" />
-  </a>
+  <img src="https://img.shields.io/github/last-commit/tobias-jermain/trailtitan" alt="Last Commit" />
+  <img src="https://img.shields.io/github/repo-size/tobias-jermain/trailtitan" alt="Repo Size" />
 </div>
 
 ---
