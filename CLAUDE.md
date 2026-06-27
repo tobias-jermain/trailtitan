@@ -1,8 +1,8 @@
-# TrailTitan — Claude Code Guide
+# Trailtitan — Claude Code Guide
 
 ## Project Overview
 
-TrailTitan is a **Windows desktop application** for hiking route planning and expedition management. It ships as an NSIS `.exe` installer built with Electron + React. It is open source with retained branding.
+Trailtitan is a **Windows desktop application** for hiking route planning and expedition management. It ships as an NSIS `.exe` installer built with Electron + React. It is open source with retained branding.
 
 Every constraint, limit, and workflow is driven by a typed config schema. No specific expedition programme, award scheme, or organisation is ever named or hardcoded in the repository.
 
@@ -67,10 +67,11 @@ trailtitan/
 - **API key in userData**: the ORS API key is stored in the OS `userData` folder via `electron-store`, never in the repo or env files.
 - **IPC boundary**: the renderer never calls the ORS API directly. All external HTTP happens in the main process via `ipc/routing.ts`. This keeps the key out of DevTools.
 - **Export writes to disk**: export handlers run in the main process and open a native save dialog.
+- **Branch naming**: branches must follow the `<type>/<short-description>` convention. Use lowercase kebab-case for the description. Examples: `feature/walking-modes`, `ui/run-button`, `fix/elevation-crash`, `chore/update-deps`, `docs/ipc-design`. Do not use bare names like `patch`, `update`, or `fix` without a descriptive suffix.
 
 ## App Config (userData)
 
-Stored via `electron-store` at `%APPDATA%/TrailTitan/config.json`:
+Stored via `electron-store` at `%APPDATA%/Trailtitan/config.json`:
 
 ```jsonc
 {
@@ -88,7 +89,7 @@ Stored via `electron-store` at `%APPDATA%/TrailTitan/config.json`:
 npm install
 npm run dev          # Electron dev mode (hot reload on renderer changes)
 npm run build        # Production build
-npm run dist         # Build + package → release/TrailTitan-Setup.exe
+npm run dist         # Build + package → release/Trailtitan-Setup.exe
 npm run type-check   # tsc --noEmit (both electron/ and src/)
 npm run test         # Vitest (renderer logic only; main process tested via integration)
 npm run lint         # ESLint
