@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { memo, useEffect } from 'react'
 import {
   MapContainer,
   Marker,
@@ -56,7 +56,7 @@ function FitToRoute({ route }: { route: GeneratedRoute | null }) {
   return null
 }
 
-export function RouteMap({
+function RouteMapImpl({
   waypoints,
   route,
   onAddWaypoint,
@@ -107,3 +107,9 @@ export function RouteMap({
     </div>
   )
 }
+
+/**
+ * Memoised so the heavy Leaflet tree only re-renders when its own inputs change
+ * — not on every unrelated planner state update (e.g. validation warnings).
+ */
+export const RouteMap = memo(RouteMapImpl)

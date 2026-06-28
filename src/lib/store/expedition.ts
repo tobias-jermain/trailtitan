@@ -26,6 +26,7 @@ export interface ExpeditionStore {
   addWaypoint: (coordinates: [number, number]) => void
   moveWaypoint: (id: string, coordinates: [number, number]) => void
   removeWaypoint: (id: string) => void
+  clearWaypoints: () => void
   loadPreset: (id: string) => void
   loadConfig: (config: ExpeditionConfig) => void
   generate: () => Promise<void>
@@ -77,6 +78,8 @@ export const useExpeditionStore = create<ExpeditionStore>((set, get) => ({
     set((state) => ({
       waypoints: state.waypoints.filter((w) => w.id !== id),
     })),
+
+  clearWaypoints: () => set({ waypoints: [] }),
 
   loadPreset: (id) => {
     const preset = findPreset(id)
