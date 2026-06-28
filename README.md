@@ -149,26 +149,32 @@ See [`docs/architecture.md`](docs/architecture.md) for the full breakdown.
 
 ## Roadmap
 
-- [ ] Project scaffold (electron-vite + React + Tailwind)
-- [ ] IPC architecture (main ↔ renderer bridge)
-- [ ] Config schema (Zod) + defaults + presets
-- [ ] App config persistence (electron-store)
-- [ ] Settings panel (API key, theme, default preset)
-- [ ] Planner wizard — Step 1: Expedition setup
-- [ ] Planner wizard — Step 2: Terrain & pace
-- [ ] Planner wizard — Step 3: Checkpoint builder
-- [ ] Planner wizard — Step 4: Review & generate
-- [ ] Interactive map (react-leaflet, ORS routing via IPC)
-- [ ] Elevation profile chart
-- [ ] Naismith time calculator
-- [ ] Constraint validation & inline warnings
-- [ ] Export: GPX (native save dialog)
-- [ ] Export: PDF route card
-- [ ] Export: CSV stage log
-- [ ] Preset save/load (in-app)
-- [ ] NSIS installer (electron-builder)
-- [ ] GitHub Actions CI → auto-release on tag
-- [ ] Auto-updater (electron-updater)
+Shipped in the MVP:
+
+- [x] Project scaffold (electron-vite + React + Tailwind)
+- [x] IPC architecture (main ↔ renderer bridge)
+- [x] Config schema (Zod) + defaults + presets
+- [x] App config persistence (electron-store)
+- [x] Settings panel (API key, theme, default preset)
+- [x] Planner wizard — Step 1: Expedition setup
+- [x] Planner wizard — Step 2: Terrain & pace
+- [x] Planner wizard — Step 3: Checkpoint builder
+- [x] Planner wizard — Step 4: Review & generate
+- [x] Interactive map (react-leaflet, ORS routing via IPC)
+- [x] Elevation profile chart
+- [x] Naismith time calculator
+- [x] Constraint validation & inline warnings
+- [x] Export: GPX (native save dialog)
+- [x] Export: PDF route card
+- [x] Export: CSV stage log
+- [x] Preset load (in-app) + save generated routes
+- [x] NSIS installer config (electron-builder)
+- [x] GitHub Actions CI + auto-release on tag
+- [x] Auto-updater wiring (electron-updater)
+
+Planned next:
+
+- [ ] In-app user preset save/edit
 - [ ] Weather overlay (Open-Meteo, optional)
 - [ ] Offline map tiles (MBTiles)
 - [ ] macOS support (.dmg)
