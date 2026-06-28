@@ -1,0 +1,38 @@
+name: Build installer
+
+# Produces the packaged Windows NSIS installer as a downloadable artifact,
+# without cutting a release. Useful for testing a build off any commit.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and package NSIS installer
+        # Build the bundles, then package explicitly with no publishing — this
+        # workflow only ever produces an artifact, never a release.
+        run: npm run build && npx electron-builder --publish never
+
+      - name: Upload installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: trailtitan-setup
+          path: release/TrailTitan-Setup-*.exe
+          if-no-files-found: error
+          retention-days: 14
