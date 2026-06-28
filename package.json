@@ -1,0 +1,100 @@
+{
+  "name": "trailtitan",
+  "version": "0.1.0",
+  "description": "Hiking route planning & expedition management — Windows desktop app",
+  "author": "TrailTitan Contributors",
+  "license": "MIT",
+  "main": "out/main/index.js",
+  "homepage": "./",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "npm run type-check && electron-vite build",
+    "preview": "electron-vite preview",
+    "dist": "npm run build && electron-builder",
+    "type-check": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0",
+    "electron-updater": "^6.2.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jsdom": "^24.1.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.400.0",
+    "papaparse": "^5.4.1",
+    "@types/papaparse": "^5.3.14",
+    "postcss": "^8.4.39",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.24.0",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss": "^3.4.4",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.5.2",
+    "vite": "^5.3.2",
+    "vitest": "^1.6.0",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
+  },
+  "build": {
+    "appId": "com.trailtitan.app",
+    "productName": "TrailTitan",
+    "copyright": "Copyright © 2026 TrailTitan Contributors",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*",
+      "public/**/*"
+    ],
+    "win": {
+      "icon": "build/icon.png",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "TrailTitan",
+      "artifactName": "TrailTitan-Setup-${version}.${ext}"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "tobias-jermain",
+      "repo": "trailtitan"
+    }
+  }
+}

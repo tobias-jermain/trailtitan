@@ -1,0 +1,14 @@
+node_modules/
+out/
+dist/
+release/
+*.log
+.DS_Store
+.env
+.env.local
+coverage/
+# electron-store config (never commit user config / API keys)
+config.json
+
+# TypeScript incremental build info
+*.tsbuildinfo

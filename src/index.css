@@ -1,0 +1,63 @@
+@import 'leaflet/dist/leaflet.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --primary: 222 65% 25%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 168 61% 33%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 94%;
+    --muted-foreground: 215 16% 42%;
+    --accent: 168 61% 33%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 88%;
+    --input: 214 32% 88%;
+    --ring: 222 65% 35%;
+    --radius: 0.6rem;
+  }
+
+  .dark {
+    --background: 222 47% 9%;
+    --foreground: 210 40% 96%;
+    --card: 222 40% 13%;
+    --card-foreground: 210 40% 96%;
+    --primary: 210 70% 70%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 168 50% 45%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 168 50% 40%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 22%;
+    --input: 217 33% 22%;
+    --ring: 210 70% 60%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+      sans-serif;
+  }
+
+  /* Leaflet renders inside a flex layout; give it an explicit stacking context. */
+  .leaflet-container {
+    @apply z-0 h-full w-full;
+    background: hsl(var(--muted));
+  }
+}
