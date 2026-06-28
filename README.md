@@ -146,7 +146,6 @@ See [`docs/architecture.md`](docs/architecture.md) for the full breakdown.
 5. Open a pull request
 
 ---
-
 ## Roadmap
 
 - [ ] Project scaffold (electron-vite + React + Tailwind)
